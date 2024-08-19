@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 3px;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        canvas {
+            border: 2px solid #333;
+            background-color: #eaeaea;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Canvas with Different Objects</h1>
+        <canvas id="myCanvas"></canvas>
+    </div>
+    <script>
+        const canvas = document.getElementById('myCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = 500;
+        canvas.height = 400;
+        ctx.fillStyle = '#3498db';
+        ctx.fillRect(50, 50, 150, 100);
+        ctx.beginPath();
+        ctx.arc(300, 100, 50, 0, Math.PI * 2, false);
+        ctx.fillStyle = '#e74c3c';
+        ctx.fill();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(50, 250);
+        ctx.lineTo(450, 350);
+        ctx.strokeStyle = '#2ecc71';
+        ctx.lineWidth = 5;
+        ctx.stroke();
+        ctx.closePath();
+    </script>
+</body>
+</html>

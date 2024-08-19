@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Library</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 10px black;
+            margin: 20px auto;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .search-bar input {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .movie-card {
+            background-color: #fff;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 200px;
+            box-shadow:10px 5px 5px rgba(57, 55, 55, 0.1);
+        }
+        .movie-card img {
+            width: 100%;
+            height: auto;
+        }
+        .movie-card .info {
+            padding: 10px;
+        }
+        .movie-card .info h3 {
+            margin: 0 0 10px;
+            font-size: 16px;
+        }
+        .movie-card .info p {
+            margin: 0;
+            color: #444242;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Movie Library</h1>
+    </header>
+    <div class="container">
+        <div class="search-bar">
+            <input type="text" placeholder="Search for movies...">
+        </div>
+        <div class="movies">
+            <div class="movie-card">
+                <img src="gabbar singh.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>GABBAR SINGH</h3>
+                    <p>Release Year: 2012</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="ustaad.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>USTAAD BHAGAT SINGH</h3>
+                    <p>Release Year: 2024</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='bheemla.webp' alt="Movie Poster">
+                <div class="info">
+                    <h3>BHEEMLA NAYAK</h3>
+                    <p>Release Year: 2022</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="atharintiki daaredhi.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>ATHARINTIKI DAAREDHI</h3>
+                    <p>Release Year: 2013</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="agnaathavaasi.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>AGNYAATHAVAASI</h3>
+                    <p>Release Year: 2018</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='vakeel sab.jpg' alt="Movie Poster">
+                <div class="info">
+                    <h3>VAKEEL SAB</h3>
+                    <p>Release Year: 2021</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="theenmaar.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>THEEN MAAR</h3>
+                    <p>Release Year: 2011</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="balu.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>BALU</h3>
+                    <p>Release Year: 2005</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='panjaa.jpg' alt="Movie Poster">
+                <div class="info">
+                    <h3>PANJAA</h3>
+                    <p>Release Year: 2011</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="tammudu.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>THAMMUDU</h3>
+                    <p>Release Year: 1999</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='sardaar gabbar singh.avif' alt="Movie Poster">
+                <div class="info">
+                    <h3>SARDAAR GABBAR SINGH</h3>
+                    <p>Release Year: 2016</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="katamarayudu1.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>KATAMARAYUDU</h3>
+                    <p>Release Year: 2017</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='kushi.jpg' alt="Movie Poster">
+                <div class="info">
+                    <h3>KUSHI</h3>
+                    <p>Release Year: 2000</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="bangaram.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>BANGARAM</h3>
+                    <p>Release Year: 2006</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="gudumba shankar.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>GUDUMBA SHANKAR</h3>
+                    <p>Release Year: 2004</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='komarampuli.jpg' alt="Movie Poster">
+                <div class="info">
+                    <h3>KOMARAMPULI</h3>
+                    <p>Release Year: 2010</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="tholiprema.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>THOLI PREMA</h3>
+                    <p>Release Year: 1998</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="cameraman gangatho rambabu.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>CAMERAMAN GANGATHO RAMBABU</h3>
+                    <p>Release Year: 2012</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src='badri.jpg' alt="Movie Poster">
+                <div class="info">
+                    <h3>BADRI</h3>
+                    <p>Release Year: 2000</p>
+                </div>
+            </div>
+            <div class="movie-card">
+                <img src="broo.jpg" alt="Movie Poster">
+                <div class="info">
+                    <h3>BRO</h3>
+                    <p>Release Year: 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+

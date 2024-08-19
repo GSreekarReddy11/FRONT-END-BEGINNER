@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete LinkedIn Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 500px;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            color: #0073b1;
+        }
+        p {
+            margin: 15px 0;
+            color: #555;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        input[type="password"] {
+            width: 100%;
+            padding: 6px; /* Reduced padding */
+            margin: 5px 0 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px; /* Adjust font size if needed */
+        }
+        button {
+            background-color: #d9534f;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #c9302c;
+        }
+        .cancel-button {
+            background-color: #6c757d;
+            margin-left: 10px;
+        }
+        .cancel-button:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Delete Your LinkedIn Account</h2>
+        <p>Are you sure you want to permanently delete your LinkedIn account? This action cannot be undone.</p>
+        <form>
+            <div class="form-group">
+                <input type="password" placeholder="Enter your password" required>
+            </div>
+            <button type="submit">Delete Account</button>
+            <button type="button" class="cancel-button" onclick="window.history.back()">Cancel</button>
+        </form>
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohan Babu University - Student Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding-top: 20px; /* Add padding to prevent cutting off the name */
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #0073b1;
+            margin: 10px 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #0073b1;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #005f8b;
+        }
+
+        p {
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Mohan Babu University</h1>
+        <h2>Student Registration Form</h2>
+
+        <label for="sname">Student Name:</label>
+        <input type="text" id="sname" name="sname" required>
+        
+        <label for="smobile">Student Mobile Number:</label>
+        <input type="number" id="smobile" name="smobile" required>
+        
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <label for="pmobile">Parent Mobile Number:</label>
+        <input type="number" id="pmobile" name="pmobile" required>
+        
+        <label for="course">Course:</label>
+        <select name="course" id="course" required>
+            <option value="btech_cse">BTech Computer Science Engineering</option>
+            <option value="btech_ece">BTech Electronics and Communication Engineering</option>
+            <option value="btech_eee">BTech Electrical and Electronics Engineering</option>
+            <option value="bba">Bachelor of Business Administration</option>
+            <option value="mba">Master of Business Administration</option>
+            <option value="msc">Master of Science</option>
+            <option value="mtech">Master of Technology</option>
+        </select>
+
+        <p>By clicking Agree & Join or Continue, you agree to the Mohan Babu University User Agreement, Privacy Policy, and Cookie Policy.</p>
+        <input type="button" value="Agree & Join">
+    </form>
+</body>
+</html>
